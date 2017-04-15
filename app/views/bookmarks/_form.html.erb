@@ -1,0 +1,5 @@
+<%= form_for [@bookmark], remote: true do |f| %>
+  <p> Add bookmark </p>
+  <%= f.text_field :url, autofocus: true, placeholder: 'Enter new url', autocomplete: false %>
+  <div id='errors'></div>
+<% end %>

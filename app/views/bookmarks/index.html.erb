@@ -1,0 +1,14 @@
+<div class='forms clearfix'>
+  <%= render 'form' %>
+  <%= render 'search_form' %>
+</div>
+
+<div class='urls'>
+  <div id='bookmarks' class='bookmarks'>
+    <%= render bookmarks %>
+  </div>
+
+  <div id='paginator' class='paginator'>
+    <%= paginate bookmarks, remote: true %>
+  </div>
+</div>
