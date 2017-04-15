@@ -1,5 +1,12 @@
-<a href="<%= bookmark.url %>" class='bookmark'>
-  <div class='title'>
-    <%= bookmark.short_url %>
+<div class='bookmark' id='bookmark_<%= bookmark.id %>'>
+  <div class='bookmark-link'>
+    <%= link_to '', bookmark.url, class: 'link' %>
+    <div class='title'>
+      <%= bookmark.short_url %>
+    </div>
+    <div class='screen'>
+      <img src='<%= bookmark.image_url %>'/>
+    </div>
   </div>
-</a>
+  <%= link_to '×', bookmark_path(bookmark), method: :delete, remote: true, class: 'delete' %>
+</div>

@@ -3,7 +3,6 @@ class BookmarksController < ApplicationController
 
   def index
     @bookmark = Bookmark.new
-    @url = LinkThumbnailer.generate('http://stackoverflow.com')
   end
 
   def create

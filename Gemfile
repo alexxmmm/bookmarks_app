@@ -61,6 +61,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pry'
-gem 'link_thumbnailer'
 gem 'koala'
 gem 'kaminari'
+gem 'webshot'
+gem 'cloudinary'
