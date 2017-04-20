@@ -13,6 +13,7 @@
       <% if current_user %>
         Welcome <strong><%= current_user.name %></strong>!
         <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <%= link_to 'Friends', friends_path, class: 'friends' %>
       <% end %>
     </header>
     <div class='wrapper'>

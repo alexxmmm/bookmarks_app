@@ -4,6 +4,10 @@
  -webkit-box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .new_bookmark {
   float: left;
 }
@@ -125,4 +129,19 @@ footer {
       top: 0;
     }
   }
+}
+
+.friend-list {
+  padding: 25px;
+
+  a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.friends {
+  margin-left: 50px;
+  text-transform: uppercase;
+  color: black;
 }

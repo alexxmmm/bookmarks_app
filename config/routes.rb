@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
   resources :bookmarks
+  resources :friends, only: [:index, :show]
 end

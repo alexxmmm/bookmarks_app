@@ -1,0 +1,16 @@
+<div class='forms clearfix'>
+  <%= render 'search_form' %>
+</div>
+
+<div class='urls'>
+  <div id='bookmarks' class='bookmarks'>
+    <%= render bookmarks %>
+    <%- if bookmarks.count.zero? %>
+      <p> User has no bookmarks </p>
+    <% end %>
+  </div>
+
+  <div id='paginator' class='paginator'>
+    <%= paginate bookmarks, remote: true %>
+  </div>
+</div>

@@ -8,5 +8,7 @@
       <img src='<%= bookmark.image_url %>'/>
     </div>
   </div>
-  <%= link_to '×', bookmark_path(bookmark), method: :delete, remote: true, class: 'delete' %>
+  <%- if bookmark.user == current_user %>
+    <%= link_to '×', bookmark_path(bookmark), method: :delete, remote: true, class: 'delete' %>
+  <% end %>
 </div>
